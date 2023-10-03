@@ -5,7 +5,8 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import ReactDOM from "react-dom/client";
 import {BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Welecome from './welecome';
-import About from './about';
+import Student from './students';
+import CreateStudent from './createStudent';
 
 
 export default function App() {
@@ -19,7 +20,7 @@ export default function App() {
 		        <Navbar.Collapse id="basic-navbar-nav">
 		          <Nav className="me-auto">
 		            <Link to="/ngssl/">Home</Link>
-		            <Link to="/ngssl/about">About</Link>
+		            <Link to="/ngssl/students">Student</Link>
 		             
 		          </Nav>
 		        </Navbar.Collapse>
@@ -28,10 +29,10 @@ export default function App() {
 		    <Container>
 		        <Routes>
 		          <Route exact path="/ngssl/" element={<Welecome />}>
-		            
 		          </Route>
-		          <Route path="/ngssl/about" element={<About />}>
-		            
+		          <Route path="/ngssl/students" element={<Student />}>
+		          </Route>
+		          <Route path="/ngssl/add-student" element={<CreateStudent />}>
 		          </Route>
 		          
 		        </Routes>
