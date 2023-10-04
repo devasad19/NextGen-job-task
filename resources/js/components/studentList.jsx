@@ -27,10 +27,8 @@ export default function About (){
 			 	<Card className="mt-3">
 			      <Card.Body>
 			      <div>
-			        <Card.Title>Students List
-			        	<Link to="/student/create">
-							<Button style={{float:'right'}} className="mb-3 pull-right" variant="primary">Add Student</Button>
-						</Link>
+			        <Card.Title className="mb-3">Students List
+			        	 
 			        </Card.Title>
 			        </div>
 			         <Table striped bordered hover variant="dark">
